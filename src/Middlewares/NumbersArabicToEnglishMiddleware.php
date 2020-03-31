@@ -6,14 +6,14 @@
  * Copyright © 2006-2020 MyTh All rights reserved.
  */
 
-namespace MyTh\Support\ArabicNumbers\Middlewares;
+namespace Myth\Support\ArabicNumbers\Middlewares;
 
 use Closure;
 use Illuminate\Http\Request;
 
 /**
  * Class NumbersArabicToEnglishMiddleware
- * @package MyTh\Support\ArabicNumbers\Middlewares
+ * @package Myth\Support\ArabicNumbers\Middlewares
  */
 class NumbersArabicToEnglishMiddleware{
 

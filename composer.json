@@ -3,7 +3,7 @@
   "type": "library",
   "description": "Laravel Middleware convert arabic numbers to english numbers",
   "keywords": [
-    "MyTh",
+    "Myth",
     "4myth",
     "arabic",
     "indian",
@@ -25,13 +25,13 @@
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "MyTh\\Support\\ArabicNumbers\\": "src/"
+      "Myth\\Support\\ArabicNumbers\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "MyTh\\Support\\ArabicNumbers\\Providers\\ArabicNumbersProvider"
+        "Myth\\Support\\ArabicNumbers\\Providers\\ArabicNumbersProvider"
       ]
     }
   },
