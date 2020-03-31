@@ -1,0 +1,40 @@
+{
+  "name": "4myth/arabic-numbers",
+  "type": "library",
+  "description": "Laravel Middleware convert arabic numbers to english numbers",
+  "keywords": [
+    "MyTh",
+    "4myth",
+    "arabic",
+    "indian",
+    "arabic",
+    "macos",
+    "mac"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmed Fayez",
+      "email": "mythpe@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "laravel/framework": ">=5.5"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "MyTh\\Support\\ArabicNumbers\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MyTh\\Support\\ArabicNumbers\\Providers\\ArabicNumbersProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
