@@ -10,7 +10,7 @@ namespace Myth\Support\ArabicNumbers\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Myth\Support\ArabicNumbers\Middlewares\NumbersArabicToEnglishMiddleware;
+use Myth\Support\ArabicNumbers\Middlewares\ArToEnMiddleware;
 
 /**
  * Class ArabicNumbersProvider
@@ -42,7 +42,7 @@ class ArabicNumbersProvider extends ServiceProvider{
         $config = $this->app['config']->get($this->configData['key']);
         $router->aliasMiddleware(
             "myth.{$config['middleware_name']}",
-            NumbersArabicToEnglishMiddleware::class
+            ArToEnMiddleware::class
         );
     }
 
