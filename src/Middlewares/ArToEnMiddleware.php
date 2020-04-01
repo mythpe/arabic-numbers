@@ -6,14 +6,14 @@
  * Copyright © 2006-2020 MyTh All rights reserved.
  */
 
-namespace Myth\Support\ArabicNumbers\Middlewares;
+namespace Myth\Support\Middlewares;
 
 use Closure;
 use Illuminate\Http\Request;
 
 /**
  * Class ArToEnMiddleware
- * @package Myth\Support\ArabicNumbers\Middlewares
+ * @package Myth\Support\Middlewares
  */
 class ArToEnMiddleware{
 

@@ -25,13 +25,13 @@
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "Myth\\Support\\ArabicNumbers\\": "src/"
+      "Myth\\Support\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Myth\\Support\\ArabicNumbers\\Providers\\ArabicNumbersProvider"
+        "Myth\\Support\\Providers\\ArabicNumbersProvider"
       ]
     }
   },
