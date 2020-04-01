@@ -6,15 +6,15 @@
  * Copyright © 2006-2020 MyTh All rights reserved.
  */
 
-namespace Myth\Support\ArabicNumbers\Providers;
+namespace Myth\Support\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Myth\Support\ArabicNumbers\Middlewares\NumbersArabicToEnglishMiddleware;
+use Myth\Support\Middlewares\ArToEnMiddleware;
 
 /**
  * Class ArabicNumbersProvider
- * @package Myth\Support\ArabicNumbers\Providers
+ * @package Myth\Support\Providers
  */
 class ArabicNumbersProvider extends ServiceProvider{
 
@@ -42,7 +42,7 @@ class ArabicNumbersProvider extends ServiceProvider{
         $config = $this->app['config']->get($this->configData['key']);
         $router->aliasMiddleware(
             "myth.{$config['middleware_name']}",
-            NumbersArabicToEnglishMiddleware::class
+            ArToEnMiddleware::class
         );
     }
 

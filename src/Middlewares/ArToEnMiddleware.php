@@ -6,16 +6,16 @@
  * Copyright © 2006-2020 MyTh All rights reserved.
  */
 
-namespace Myth\Support\ArabicNumbers\Middlewares;
+namespace Myth\Support\Middlewares;
 
 use Closure;
 use Illuminate\Http\Request;
 
 /**
- * Class NumbersArabicToEnglishMiddleware
- * @package Myth\Support\ArabicNumbers\Middlewares
+ * Class ArToEnMiddleware
+ * @package Myth\Support\Middlewares
  */
-class NumbersArabicToEnglishMiddleware{
+class ArToEnMiddleware{
 
     /**
      * @var array
@@ -28,7 +28,6 @@ class NumbersArabicToEnglishMiddleware{
      * @return mixed
      */
     public function handle(Request $request, Closure $next){
-
         $except = array_merge($this->except, array_slice(func_get_args(), 2));
         $request->merge($this->process($request->except($except)));
         return $next($request);
